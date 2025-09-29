@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-css/styles.css">
+    <link rel="stylesheet" href="style-css/login.css">
+    <title>Connexion - Maison Heritage</title>
+
+      <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="ressources/icon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="ressources/icon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ressources/icon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="ressources/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="ressources/icon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="ressources/icon/android-chrome-512x512.png">
+  <link rel="manifest" href="ressources/icon/site.webmanifest">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+        <a href="index.html">
+          <img src="./resources/m-h_logo.png" alt="Maison Heritage" class="logo-img">
+          <span class="logo-text">Maison Heritage</span>
+        </a>
+      </div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Se connecter</button>
+            
+            <div id="errorMessage" class="error-message">
+                Nom d'utilisateur ou mot de passe incorrect
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (username === 'admin' && password === 'admin123') {
+                window.location.href = 'panel.html';
+            } else {
+                errorMessage.style.display = 'block';
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

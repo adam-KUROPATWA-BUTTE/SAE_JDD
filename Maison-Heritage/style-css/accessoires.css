@@ -1,0 +1,167 @@
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.site-brand .logo {
+  width: 64px;
+  height: auto;
+}
+
+.brand-info .site-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.brand-info .site-tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+/* Product Categories */
+.product-categories {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.product-categories .category {
+  text-align: center;
+}
+
+.product-categories img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Services */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-item {
+  max-width: 300px;
+  text-align: left;
+}
+
+.service-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+.store-footer {
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand h2 {
+  margin: 0;
+}
+
+.footer-brand p {
+  margin: 5px 0 15px 0;
+}
+
+.social-footer a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+    
