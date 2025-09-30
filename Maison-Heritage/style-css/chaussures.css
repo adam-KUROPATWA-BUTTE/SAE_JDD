@@ -1,23 +1,7 @@
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-}
-
-/* Header */
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #f5f5f5;
 }
 
 .site-brand {
@@ -117,6 +101,7 @@ body {
 
 .service-button:hover {
     background-color:black;
+    transform: scale(1.15);
 }
 
 /* Footer */
