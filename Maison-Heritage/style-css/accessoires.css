@@ -111,10 +111,14 @@
   display: inline-block;
   margin-top: 10px;
   padding: 8px 15px;
-  background: black;
+  background: 6d071a;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.service-btn:hover{
+  background-color: black;
 }
 
 /* Footer */

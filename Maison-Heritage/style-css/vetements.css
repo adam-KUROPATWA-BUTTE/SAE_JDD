@@ -78,7 +78,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #6d071a;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -109,9 +109,14 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
-    background-color: #555;
+    background-color: #6d071a;
     color: white;
+    border-radius: 5px;
     text-decoration: none;
+}
+
+.service-button:hover{
+    background-color:black;
 }
 
 /* Footer */
